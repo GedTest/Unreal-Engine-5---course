@@ -19,15 +19,19 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	int32 MAX_DISTANCE = 650;
+	int32 MAX_DISTANCE = 650;	
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 private:
-	UPROPERTY(EditAnywhere, Category="Moving Platform")
+	UPROPERTY(EditAnywhere, Category="Moving")
 	FVector PlatformVelocity = FVector(0, 0, 300);
+
+	UPROPERTY(EditAnywhere, Category="Rotating")
+	FRotator RotationVelocity;
+
 	FVector StartLocation;
 
 	void Move(float DeltaTime);

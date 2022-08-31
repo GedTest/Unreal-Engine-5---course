@@ -44,6 +44,7 @@ void AMovingPlatform::Move(float DeltaTime){
 }
 
 void AMovingPlatform::Rotate(float DeltaTime){
+	AddActorLocalRotation(RotationVelocity * DeltaTime);
 	return;
 }
 
