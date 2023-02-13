@@ -1,0 +1,19 @@
+.vscode/
+.vs/
+
+Binaries/
+Config/
+Content/__ExternalActors__/
+Content/__ExternalObjects__/
+Content/FirstPerson/
+Content/FirstPersonArms/
+Content/FPWeapon/
+Content/LevelPrototyping/
+Content/MedievalDungeon/
+Content/LevelPrototyping/
+DerivedDataCache/
+Intermediate/
+Saved/
+Script/
+
+Link to Source Assets.txt
