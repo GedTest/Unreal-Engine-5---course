@@ -5,7 +5,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Camera/CameraComponent.h"
 #include "Kismet/GameplayStatics.h"
-#include "DrawDebugHelpers.h"
+//#include "DrawDebugHelpers.h"
 
 ATank::ATank(){
     SpringArm = CreateDefaultSubobject<USpringArmComponent>(TEXT("SpringArm"));
@@ -28,11 +28,14 @@ void ATank::Tick(float DeltaTime){
     if(PlayerControllerRef){
         FHitResult HitResult;
         PlayerControllerRef->GetHitResultUnderCursor(ECollisionChannel::ECC_Visibility, false, HitResult);
+        /*
         DrawDebugSphere(
             GetWorld(), 
             HitResult.ImpactPoint, 
             50.f, 13, FColor::Red, false
         );
+        */
+        RotateTurret(HitResult.ImpactPoint);
     }
 }
 // Called when the game starts or when spawned
