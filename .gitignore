@@ -1,0 +1,17 @@
+SimpleShooter/.vscode/
+SimpleShooter/.vs/
+
+
+SimpleShooter/Binaries/
+SimpleShooter/Config/
+SimpleShooter/Content/AssetPacks
+SimpleShooter/Content/Collections/
+SimpleShooter/Content/Developers/
+
+SimpleShooter/DerivedDataCache/
+SimpleShooter/Intermediate/
+SimpleShooter/Saved/
+SimpleShooter/Script/
+
+ShooterAssetPack/
+
