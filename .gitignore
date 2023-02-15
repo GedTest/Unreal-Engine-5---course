@@ -4,9 +4,10 @@ SimpleShooter/.vs/
 
 SimpleShooter/Binaries/
 SimpleShooter/Config/
-SimpleShooter/Content/AssetPacks
+
 SimpleShooter/Content/Collections/
 SimpleShooter/Content/Developers/
+SimpleShooter/Content/AssetPacks/
 
 SimpleShooter/DerivedDataCache/
 SimpleShooter/Intermediate/
