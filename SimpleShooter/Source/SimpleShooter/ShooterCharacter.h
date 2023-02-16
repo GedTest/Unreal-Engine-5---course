@@ -30,6 +30,8 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	bool IsDead() const;
+	UFUNCTION(BlueprintCallable)
+	float GetHealthPercentage() const { return Health / MaxHealth; }
 	void Shoot();
 
 private:
