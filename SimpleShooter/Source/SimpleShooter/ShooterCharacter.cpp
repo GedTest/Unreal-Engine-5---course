@@ -54,9 +54,11 @@ float AShooterCharacter::TakeDamage(float DamageAmmount, FDamageEvent const &Dam
 	UE_LOG(LogTemp, Warning, TEXT("Health left: %f"), Health);
 
 	if(IsDead()){
+		ASimpleShooterGameModeBase* GameMode = GetWorld()->GetAuthGameMode<ASimpleShooterGameModeBase>();
+		if(GameMode){ GameMode->PawnKilled(this); }
+
 		DetachFromControllerPendingDestroy();
 		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
-		ASimpleShooterGameModeBase* GameMode = GetWorld()->GetAuthGameMode<ASimpleShooterGameModeBase>();
 	}
 
 	return DamageApplied;
