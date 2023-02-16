@@ -30,11 +30,11 @@ public:
 
 	UFUNCTION(BlueprintCallable)
 	bool IsDead() const;
+	void Shoot();
 
 private:
 	void MoveForward(float AxisValue);
 	void MoveRight(float AxisValue);
-	void Shoot();
 
 	UPROPERTY(EditDefaultsOnly)
 	float MaxHealth = 100;
@@ -43,6 +43,7 @@ private:
 
 	UPROPERTY(EditDefaultsOnly)
 	TSubclassOf<class AGun> GunClass;
+
 
 	UPROPERTY()
 	class AGun* Gun;
